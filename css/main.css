@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.Wrap {
+
+}
+
+/*  topBanner 2022.03.17 최종수정 JJAMMIN  */
+.topBanner {
+    padding: 24px 0;
+    background: #f2f2f2;
+}
+
+.topBanner .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.topBanner h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 0.040em;
+}
+
+.topBanner p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+}
+
+.topBanner a {
+    padding: 3px 30px;
+    border: 1px solid #333;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+.topBanner i {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 20px;
+    background: #ddd;
+    padding: 7px;
+    border-radius: 50%; /*100원이 된다.*/
+}
+
+
+.headerWrap {
+
+}
+
+.headerWrap .container {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    line-height: 100px;
+}
+
+.headerWrap .container>* {
+    padding: 0 15px;
+}
+
+
+.headerWrap .gnb {
+    margin-left: auto;
+}
+
+.headerWrap .gnb>ul {
+    display: flex;
+    gap: 50px;
+    color: #212529;
+}
+
+.headerWrap .gnb>ul>li {
+    position: relative;
+}
+
+.headerWrap .gnb>ul>li>a {
+    display: block;
+}
+
+.headerWrap .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    inset: 50% auto auto -25px;
+    display: block;
+    width: 1px;
+    height: 12px;
+    background: #212529;
+    transform: translateY(-50%);
+}
+
+/* .headerWrap .gnb>ul>li:first-child::before {
+    display: none;
+} */
+
+
+
+#searchForm input[type="text"]{
+    color: #fd7e14;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333;
+    padding: 3px 5px;
+}
+#searchForm input:placeholder {
+    color: #fd7e14;
+}
+#searchForm input:focus::placeholder {
+    color: transparent;
+}
+
+#searchForm button {
+    border: none;
+    background: transparent;
+}
+
+#searchForm button i {
+    color: #fff;
+    background: #333;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* 메인슬라이드 */
+.mainVisual {
+
+}
+.mainVisual .mainVisualSlide figure {
+    position: relative;
+    height: 600px;
+    color: #fff;
+    text-shadow: 0 0 3px #333;
+}
+
+.mainVisual .mainVisualSlide figure.itm02 {
+    color: #333;
+    text-shadow: 0 0 3px #fff;
+}
+
+
+
+.mainVisual .mainVisualSlide figure h2 {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.mainVisual .mainVisualSlide figure.on h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+.mainVisual .mainVisualSlide figure p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.mainVisual .mainVisualSlide figure.on p {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s 0.5s;
+}
+
+.mainVisual .mainVisualSlide figure a {
+    display: inline-block;
+    padding: 5px 20px;
+    background: #333;
+    color: #fff;
+    text-align:center;
+    border:1px solid #fff;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.mainVisual .mainVisualSlide figure.on a {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s 1s;
+}
+
+.mainVisual .mainVisualSlide figure i {
+    vertical-align: middle;
+}
+
+
+
+.mainVisual .mainVisualSlide .itm01{
+    background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+}
+.mainVisual .mainVisualSlide .itm02{
+    background: url(../img/mainvisual02.jpg) no-repeat center center/cover;
+}
+.mainVisual .mainVisualSlide .itm03{
+    background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainVisualSlide .slogan {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%,-50%);
+    width: 1200px;
+    padding: 0 15px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+.popup {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.popup button {
+    position: absolute;
+    bottom:50px;
+    right:50px;
+    background:#333;
+    color:#fff;
+    width:100px;
+    height:60px;
+    border:none;
+
+}
