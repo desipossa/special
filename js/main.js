@@ -92,6 +92,37 @@ $(function () {
     });
 
 
+    $('.productSlide').on('init reInit afterChange', function (e, s, c) {
+        let current = $('.slick-current');
+        current.addClass('on').siblings().removeClass('on');
+    });
+
+    $('.productSlide').slick({
+        slidesToShow: 5,
+        dots: true,
+        arrows: false,
+        centerMode: true,
+        autoplay: true,
+    });
+
+
+    $('.productMain .slide_arrows i:first-child').on('click', function () {
+        $('.productSlide').slick('slickPrev');
+    });
+    $('.productMain .slide_arrows i:last-child').on('click', function () {
+        $('.productSlide').slick('slickNext');
+    });
+
+
+    $('.tabMenu li').on('click', function () {
+        let idx = $(this).index(); // 0,1,2
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.tabContent>div').eq(idx).addClass('on').siblings().removeClass('on');
+    });
+
+
+
+
 
 
 

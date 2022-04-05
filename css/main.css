@@ -5,9 +5,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.Wrap {
-
-}
+.Wrap {}
 
 /*  topBanner 2022.03.17 최종수정 JJAMMIN  */
 .topBanner {
@@ -50,13 +48,12 @@ body {
     font-size: 20px;
     background: #ddd;
     padding: 7px;
-    border-radius: 50%; /*100원이 된다.*/
+    border-radius: 50%;
+    /*100원이 된다.*/
 }
 
 
-.headerWrap {
-
-}
+.headerWrap {}
 
 .headerWrap .container {
     display: flex;
@@ -105,16 +102,18 @@ body {
 
 
 
-#searchForm input[type="text"]{
+#searchForm input[type="text"] {
     color: #fd7e14;
     outline: none;
     border: none;
     border-bottom: 1px solid #333;
     padding: 3px 5px;
 }
+
 #searchForm input:placeholder {
     color: #fd7e14;
 }
+
 #searchForm input:focus::placeholder {
     color: transparent;
 }
@@ -136,6 +135,7 @@ body {
 .mainVisual {
     position: relative;
 }
+
 .mainVisual .mainVisualSlide figure {
     position: relative;
     height: 600px;
@@ -184,8 +184,8 @@ body {
     padding: 5px 20px;
     background: #333;
     color: #fff;
-    text-align:center;
-    border:1px solid #fff;
+    text-align: center;
+    border: 1px solid #fff;
     opacity: 0;
     transform: translateY(100px);
 }
@@ -202,20 +202,22 @@ body {
 
 
 
-.mainVisual .mainVisualSlide .itm01{
+.mainVisual .mainVisualSlide .itm01 {
     background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
 }
-.mainVisual .mainVisualSlide .itm02{
+
+.mainVisual .mainVisualSlide .itm02 {
     background: url(../img/mainvisual02.jpg) no-repeat center center/cover;
 }
-.mainVisual .mainVisualSlide .itm03{
+
+.mainVisual .mainVisualSlide .itm03 {
     background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .mainVisualSlide .slogan {
     position: absolute;
     inset: 50% auto auto 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 1200px;
     padding: 0 15px;
 }
@@ -276,16 +278,16 @@ body {
 
     padding: 20px;
     font-size: 50px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     border-radius: 50%;
 }
 
-.mainVisual  .slideArrows .s__left {
+.mainVisual .slideArrows .s__left {
     left: 100px;
 }
 
-.mainVisual  .slideArrows .s__right{
+.mainVisual .slideArrows .s__right {
     right: 100px;
 }
 
@@ -340,7 +342,7 @@ body {
     text-align: center;
     color: #fff;
 
-    
+
 }
 
 .mainVisual .mainVisualLink li {
@@ -375,11 +377,12 @@ body {
 
 .mainVisual .mainVisualLink i {
     padding: 5px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 50%;;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    ;
 }
 
-.mainVisual  .slideNum  {
+.mainVisual .slideNum {
     position: absolute;
     top: 100px;
     right: 200px;
@@ -410,7 +413,7 @@ body {
 }
 
 .conentWrap h2::after {
-    content:"";
+    content: "";
     display: block;
     width: 40px;
     height: 2px;
@@ -438,16 +441,16 @@ body {
     flex: 1;
     padding: 0 15px;
     text-align: center;
-    
+
 }
 
 .conentWrap .container figure .inner {
     overflow: hidden;
-    border-radius: 75% 25% 56% 44% / 47% 21% 79% 53% ;
+    border-radius: 75% 25% 56% 44% / 47% 21% 79% 53%;
     margin: 0 0 20px 0;
 }
 
-.conentWrap .container figure img {    
+.conentWrap .container figure img {
     transition: 1s;
 }
 
@@ -465,7 +468,7 @@ body {
     background: #333;
     color: #fff;
     padding: 5px 20px;
-    border-radius: 5px ;
+    border-radius: 5px;
 }
 
 .eventBanner {
@@ -477,14 +480,14 @@ body {
     filter: grayscale(0.75);
 }
 
-.eventBanner  h2 {
+.eventBanner h2 {
     font-size: 19px;
     font-weight: 100;
     letter-spacing: 0.5em;
     margin: 0 0 10px 0;
 }
 
-.eventBanner  p {
+.eventBanner p {
     font-size: 15px;
     font-weight: 300;
     letter-spacing: -0.025em;
@@ -519,14 +522,14 @@ body {
 }
 
 
-.adMovie  h2 {
+.adMovie h2 {
     font-size: 19px;
     font-weight: 100;
     letter-spacing: 0.5em;
     margin: 0 0 10px 0;
 }
 
-.adMovie  p {
+.adMovie p {
     font-size: 15px;
     font-weight: 300;
     letter-spacing: -0.025em;
@@ -562,7 +565,7 @@ left:0;
     height: 100%;
 } */
 
-.bgMovie  {
+.bgMovie {
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -570,14 +573,14 @@ left:0;
     filter: grayscale(1);
 }
 
-.bgMovie  h2 {
+.bgMovie h2 {
     font-size: 19px;
     font-weight: 100;
     letter-spacing: 0.5em;
     margin: 0 0 10px 0;
 }
 
-.bgMovie  p {
+.bgMovie p {
     font-size: 15px;
     font-weight: 300;
     letter-spacing: -0.025em;
@@ -585,7 +588,7 @@ left:0;
     line-height: 1.4;
 }
 
-.bgMovie  i {
+.bgMovie i {
     padding: 15px;
     font-size: 30px;
     border-radius: 10px;
@@ -594,19 +597,19 @@ left:0;
 }
 
 
-.customerService  {
+.customerService {
     padding: 100px 0;
     text-align: center;
 }
 
-.customerService  h2 {
+.customerService h2 {
     font-size: 19px;
     font-weight: 100;
     letter-spacing: 0.5em;
     margin: 0 0 10px 0;
 }
 
-.customerService  p {
+.customerService p {
     font-size: 15px;
     font-weight: 300;
     letter-spacing: -0.025em;
@@ -616,7 +619,7 @@ left:0;
 .customerService .container {
     display: flex;
     width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .customerService .container>div {
@@ -651,8 +654,203 @@ left:0;
 }
 
 .root_daum_roughmap .wrap_map {
-    
+    position: relative;
+    height: 100% !important;
+    border-bottom: 1px solid #ddd;
+}
+
+.productMain {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+
+.productMain h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    margin: 0 0 10px 0;
+}
+
+.productMain p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin: 0 0 30px 0;
+}
+
+.productMain .container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.productMain figure {
+    position: relative;
+    padding: 50px 15px;
+    margin-bottom: 30px;
+}
+
+.productMain figure.on strong {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+    padding: 5px 0;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+
+.productMain .slick-dots {
+    text-align: center;
+}
+
+.productMain figure .inner {
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.productMain figure.on .inner {
+    transform: scale(1.5);
+
+}
+
+.productMain .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.productMain .slick-dots li.slick-active {
+    background: #dc3545;
+}
+
+.productMain .slick-dots li button {
+    display: none;
+}
+
+
+.productMain .slide_arrows i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #dc3545;
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.productMain .slide_arrows i:first-child {
+    margin-left: -700px;
+}
+
+.productMain .slide_arrows i:last-child {
+    margin-left: 700px;
+}
+
+.productMain figure .inner {
+    position: relative;
+}
+
+.productMain figure.on .inner {
+    z-index: 999;
+}
+
+.productMain figure .inner::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px solid #dc3545;
+    border-left: 2px solid #dc3545;
+
+    width: 0;
+    height: 0;
+
+    box-sizing: border-box;
+    opacity: 0;
+
+
+}
+
+.productMain figure.on .inner::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.productMain figure .inner::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid #dc3545;
+    border-right: 2px solid #dc3545;
+
+    width: 0;
+    height: 0;
+
+    box-sizing: border-box;
+    opacity: 0;
+
+
+}
+
+.productMain figure.on .inner::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 
 
+.productMain .hit {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    margin-left: 280px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid #dc3545;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #dc3545;
+    border-top: 10px solid #dc3545;
+    color: #fff;
+    font-size: 13px;
+}
+
+.productMain .hit span {
+    position: absolute;
+    left: -30px;
+    top: -10px;
+    line-height: 20px;
+}
+
+
+
+.tabContent>div {
+    display: none;
+}
+
+.tabContent>div.on {
+    display: block;
+}
+
+.tabMenu li.on {
+    color: #f00;
+}
