@@ -2,6 +2,6 @@
 ul, ol {list-style: none;}
 a {text-decoration: none;color: inherit;}
 body {line-height: 1;}
-img {vertical-align: middle;}
+img {max-width:100%;vertical-align: middle;}
 
 

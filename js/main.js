@@ -6,25 +6,50 @@ $(function () {
 
     function topbannerHandler() {
         $('.topBanner').slideUp();
-        곱하기(10, 20);
     }
 
     $('.topBanner i ').on('click', topbannerHandler);
 
 
+    // *** 각각의 스라이드에 애니메이션...
+    ////////////////////////////////////////////////////
 
-    $('.mainVisualSlide').on('init reInit afterChange', function () {
+
+    $('.mainVisualSlide').on('init reInit afterChange', function (e, s, c) {
+        //console.log(s.slideCount, c); //1,2,0;
+        $('.mainVisualLink li').eq(c).addClass('on').siblings().removeClass('on')
         let current = $('.slick-current');
         current.addClass('on').siblings().removeClass('on');
+
+        let num = c ? c + 1 : 1;
+        $('.mainVisual  .slideNum').text(
+            "0" + num + "/0" + s.slideCount
+        )
     });
 
 
     $('.mainVisualSlide').slick({
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         arrows: false,
         pauseOnHover: false,
         pauseOnFocus: false,
+        //dots: true,
+        // prevArrow: '<i class="xi-arrow-left s_left"></i>',
+        // nextArrow: '<i class="xi-arrow-right s_right"></i>'
+    });
+
+
+    $('.slideArrows i:first-child').on('click', function () {
+        $('.mainVisualSlide').slick('slickPrev');
+    });
+    $('.slideArrows i:last-child').on('click', function () {
+        $('.mainVisualSlide').slick('slickNext');
+    });
+
+    $('.mainVisualLink li').on('click', function () {
+        let idx = $(this).index(); // 0,1,2
+        $('.mainVisualSlide').slick('slickGoTo', idx);
     });
 
     //$('.mainVisualSlide figure').eq(1).addClass('on');
@@ -38,6 +63,33 @@ $(function () {
 
 
 
+
+    $('.movieBtn i:first-child').on('click', function () {
+        $('#adMovie').trigger('play');
+    });
+    $('.movieBtn i:last-child').on('click', function () {
+        $('#adMovie').trigger('pause');
+    });
+
+
+    $('#bgndVideo').YTPlayer({
+        videoURL: 'https://youtu.be/iTsj9xZS4q4',
+        containment: '.bgMovie',
+        autoPlay: true,
+        mute: true,
+        startAt: 0,
+        opacity: 1,
+        showControls: false,
+        playOnlyIfVisible: true,
+    });
+
+    $('.uBtn i:first-child').on('click', function () {
+        $('#bgndVideo').YTPPlay();
+    });
+
+    $('.uBtn i:last-child').on('click', function () {
+        $('#bgndVideo').YTPPause();
+    });
 
 
 

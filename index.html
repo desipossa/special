@@ -8,6 +8,7 @@
     <title>GRAFF</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -95,7 +96,132 @@
                         </div>
                     </figure>
                 </div>
+                <div class="slideArrows">
+                    <i class="xi-arrow-left s__left"></i>
+                    <i class="xi-arrow-right s__right"></i>
+                </div>
+                <ul class="mainVisualLink">
+                    <li><a href="#!"><i class="xi-instagram"></i> 1번으로 가기</a></li>
+                    <li><a href="#!"><i class="xi-kakaotalk"></i> 2번으로 가기</a></li>
+                    <li><a href="#!"><i class="xi-facebook"></i> 3번으로 가기</a></li>
+                </ul>
+                <div class="slideNum"></div>
             </section>
+
+
+
+
+
+            <!-- 아주 중요하다고 햿따. -->
+            <section class="conentWrap">
+                <h2>JEWELLERY COLLECTION EVENT</h2>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                <div class="container">
+                    <figure>
+                        <div class="inner">
+                            <img src="./img/lesedilarona01.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY COLLECTION</strong>
+                        <a href="#!">더 보기</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./img/lesedilarona01.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY COLLECTION</strong>
+                        <a href="#!">더 더 더 잘잘 보기</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./img/lesedilarona01.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY COLLECTION</strong>
+                        <a href="#!">더 보기</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./img/lesedilarona01.jpg" alt="">
+                        </div>
+                        <strong>JEWELLERY COLLECTION</strong>
+                        <a href="#!">더 보기</a>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="eventBanner">
+                <h2>JEWELLERY COLLECTION EVENT</h2>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                <a href="#!">MORE <i class="xi-arrow-right"></i></a>
+            </section>
+
+            <section class="adMovie">
+                <div class="container">
+                    <figure>
+                        <video src="./img/movie01.mp4" id="adMovie" muted autoplay loop playsinline></video>
+                    </figure>
+                    <div class="txt">
+                        <h2>JEWELLERY COLLECTION EVENT</h2>
+                        <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                        <div class="movieBtn">
+                            <i class="xi-play"></i><i class="xi-pause"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="bgMovie">
+                <h2>JEWELLERY COLLECTION EVENT</h2>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                <div class="uBtn">
+                    <i class="xi-play"></i><i class="xi-pause"></i>
+                </div>
+                <div id="bgndVideo" class="player"></div>
+            </section>
+
+            <section class="customerService">
+                <h2>JEWELLERY COLLECTION EVENT</h2>
+                <p>모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.</p>
+                <div class="container">
+                    <div class="uplay">
+                        <div class="inner">
+                            <iframe src="https://www.youtube.com/embed/iTsj9xZS4q4" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <div class="inner">
+                            <!-- * 카카오맵 - 지도퍼가기 -->
+                            <!-- 1. 지도 노드 -->
+                            <div id="daumRoughmapContainer1648730225878"
+                                class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                            <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+                            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                            <!-- 3. 실행 스크립트 -->
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp": "1648730225878",
+                                    "key": "29okt",
+                                    //"mapWidth": "640",
+                                    //"mapHeight": "360"
+                                }).render();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
         </main>
 
 
@@ -112,6 +238,12 @@
 
     </div>
 
+    <!-- <div class="bgMovie">
+        <iframe src="https://www.youtube.com/embed/iTsj9xZS4q4" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </div> -->
 
 
 </body>
@@ -121,6 +253,7 @@
 
 <script src="./js/jquery-1.12.4.min.js"></script>
 <script src="./js/slick.min.js"></script>
+<script src="./js/jquery.mb.YTPlayer.min.js"></script>
 <script src="./js/main.js"></script>
 
 
