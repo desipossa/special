@@ -113,12 +113,40 @@ $(function () {
         $('.productSlide').slick('slickNext');
     });
 
-
-    $('.tabMenu li').on('click', function () {
+    $('.customerTab .tabMenu>li').on('click', function () {
+        // console.log($(this), $(this).index())
+        // $(this) 클릭한 자신 $(this).index() 자신의 번호를 구하는 함수
         let idx = $(this).index(); // 0,1,2
+        $('.customerTab .tabContent>div').eq(idx).addClass('on').siblings().removeClass('on');
         $(this).addClass('on').siblings().removeClass('on');
-        $('.tabContent>div').eq(idx).addClass('on').siblings().removeClass('on');
+        $('.customerTab .right i').eq(idx).addClass('on').siblings().removeClass('on');
     });
+
+
+    $('#linkSite').on('change', function () {
+        let url = $(this).val();
+        if (url) window.open(url);
+    });
+
+
+    $('.toTop').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 1000)
+    });
+
+
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+        console.log(sct);
+        if (sct > 600) {
+            $('.toTop').fadeIn(2000)
+        } else {
+            $('.toTop').fadeOut(2000)
+        }
+    })
+
+
+
+
 
 
 

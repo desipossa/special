@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .responsive {
+            background: #ff0;
+        }
+
+        button {
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            .responsive {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                background: #f00;
+                width: calc(100% - 90px);
+                transition: 0.5s;
+            }
+
+            .responsive.on {
+                left: 0;
+            }
+
+            button {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive">
+        01
+    </div>
+    <button>open</button>
+</body>
+<script>
+    document.querySelector('button').addEventListener('click', function () {
+        document.querySelector('.responsive').classList.toggle('on')
+    })
+</script>
+
+</html>

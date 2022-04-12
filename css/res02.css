@@ -1,0 +1,143 @@
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+.Wrap {}
+
+header h1 {
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+nav {
+    background: #f7f7f7;
+}
+
+nav>ul {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav>ul>li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    line-height: 40px;
+}
+
+nav>ul a {
+    display: block;
+}
+
+nav>ul>li ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    text-align: center;
+    width: 100%;
+    background: #ff0;
+    z-index: 999;
+}
+
+nav>ul>li:hover ul {
+    display: block;
+}
+
+
+
+/* 
+
+nav responsive
+
+*/
+
+
+@media (max-width:768px) {
+    header h1 {
+        text-align: left;
+        line-height: 100px;
+        font-size: 30px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background: #f7f7f7;
+        z-index: 999;
+
+        width: calc(100% - 100px);
+        height: 100vh;
+
+        transition: 0.5s;
+
+        padding: 100px 0;
+    }
+
+    nav.on {
+        left: 0;
+    }
+
+    nav>ul {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    nav>ul>li {
+        position: relative;
+        flex: 1;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    nav>ul a {
+        display: block;
+    }
+
+    nav>ul>li ul {
+        position: static;
+        top: 40px;
+        left: 0;
+        display: none;
+        text-align: center;
+        width: 100%;
+        background: #ff0;
+        z-index: 999;
+    }
+
+    nav>ul>li:hover ul {
+        display: none;
+    }
+}
+
+
+.mopen {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .mopen {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        font-size: 24px;
+        background: #ddd;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+.visual {
+    height: 500px;
+}
+
+.visual figure {
+    line-height: 500px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
