@@ -103,6 +103,15 @@ $(function () {
         arrows: false,
         centerMode: true,
         autoplay: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                }
+            },
+        ]
     });
 
 
@@ -142,7 +151,25 @@ $(function () {
         } else {
             $('.toTop').fadeOut(2000)
         }
-    })
+    });
+
+
+    //$('.m__open').addClass('on')
+    // let MOPEN = document.querySelector('.m__open');
+    // MOPEN.addEventListener('click', e => {
+    //     e.currentTarget.classList.toggle('on')
+    // })
+
+    $('.m__open').on('click', function () {
+        $(this).toggleClass('on');
+        $('.gnb').toggleClass('on');
+    });
+
+
+
+
+
+
 
 
 

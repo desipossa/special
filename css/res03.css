@@ -1,0 +1,122 @@
+:root {
+    --mc: #444;
+    --sc: #d63384;
+    --dc: #343a40;
+    --gc: #e9ecef;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.flex__container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.flex__container>* {
+    flex: 1;
+    padding: 0 1.5rem;
+}
+
+
+@media (max-width:768px) {
+    html {
+        font-size: 10px;
+    }
+
+    .flex__container {
+        display: flex;
+        flex-flow: column wrap;
+        width: auto;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .flex__container>* {
+        flex: 1;
+        padding: 0 1rem;
+    }
+}
+
+header {
+    line-height: 10rem;
+    text-align: center;
+}
+
+.main__visual {
+    height: 50vh;
+    background: url(../img/mainvisual01.jpg) no-repeat left center/cover;
+}
+
+.main__visual .slogan {
+    width: 120rem;
+    margin: 0 auto;
+    padding: 20rem 0 0 0;
+    color: var(--gc);
+    text-align: center;
+}
+
+.main__visual .slogan h2 {
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0 0 2rem 0;
+}
+
+.main__visual .slogan p {
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.23;
+}
+
+@media (max-width:768px) {
+    .main__visual .slogan {
+        width: auto;
+        margin: 0 auto;
+        padding: 40vw 0 0 0;
+        color: var(--gc);
+        text-align: center;
+    }
+
+    .main__visual .slogan h2 {
+        font-size: 7vw;
+        font-weight: 900;
+        margin: 0 0 2rem 0;
+    }
+
+    .main__visual .slogan p {
+        font-size: 3vw;
+        font-weight: 300;
+        line-height: 1.23;
+    }
+}
+
+
+.main__section {
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.main__section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: var(--mc)
+}
+
+.main__section p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0 0 2rem 0;
+    color: var(--sc);
+}
+
+.customer__event {
+    background: var(--gc);
+}
